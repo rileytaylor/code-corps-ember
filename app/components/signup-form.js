@@ -48,9 +48,8 @@ export default Ember.Component.extend({
 
   _signIn(credentials) {
     this.get('session').authenticate(
-      'authenticator:oauth2',
-      credentials.identification,
-      credentials.password);
+      'authenticator:jwt',
+      credentials);
   },
 
   _shakeButton() {

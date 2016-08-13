@@ -4,7 +4,7 @@ import ENV from 'code-corps-ember/config/environment';
 import Ember from 'ember';
 
 export default DS.JSONAPIAdapter.extend(DataAdapterMixin, {
-  authorizer: 'authorizer:oauth2',
+  authorizer: 'authorizer:token',
 
   // TODO: Fix this once many-to-many lands in ember-cli-mirage
   // but as of right now there is no way to make this work for
